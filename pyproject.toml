@@ -1,0 +1,7 @@
+[tool.taskipy.tasks]
+
+# 1. Runs your smart environment script to install dependencies or sync new packages
+setup = "powershell -ExecutionPolicy Bypass -File ./setup_venv.ps1"
+
+# 2. Runs your main application setup
+start = "python run.py"
